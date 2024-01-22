@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hockey's</title>
+
+    <!-- tailwind and daisy UI cdn link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <style>
+        .font-manrope{
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
+</head>
+<body class="font-manrope">
+    <!--header section -->
+    <header class="container mx-auto mt-14">
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 hidden lg:flex">
+                      <li><a>Home</a></li>
+                      <li><a>About</a></li>
+                      <li><a>Pages</a></li>
+                      <li><a>Blog</a></li>
+                      <li><a>Contact</a></li>
+                    </ul>
+                  </div>
+                  <a class="text-2xl lg:text-4xl font-extrabold text-[#131318]">Hockey<span class="text-[#FF4240]">’</span>s</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1 hidden lg:flex">
+                    <li><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Pages</a></li>
+                    <li><a>Blog</a></li>
+                    <li><a>Contact</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end flex gap-6">
+                  <i class="fa-solid fa-magnifying-glass text-[#424247] hidden lg:flex"></i>
+                  <a class="btn bg-[#FF4240] text-xl font-bold text-white">Get Ticket</a>
+                </div>
+              </div>
+        </nav>
+        <!-- <div class="mt-14 container mx-auto">
+            <div class="carousel w-full">
+                <div id="slide1" class="carousel-item relative w-full bg-[url(./Images/1.png)] h-[800px] bg-cover">
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle">❮</a> 
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div> 
+                <div id="slide2" class="carousel-item relative w-full bg-[linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0,0.1)),url(./images/banner2.png)] h-[550px] bg-cover flex justify-center items-center">
+                    <div class="text-white text-center space-y-6">
+                      <h1 class="text-3xl lg:text-7xl font-extrabold">Exotic tastes at your <br> doorstep</h1>
+                      <p>We supply highly quality organic products</p>
+                      <button class="btn bg-[#F85559] text-white border-none">Shop Now</button>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle">❮</a> 
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+                </div> 
+                <div class="bg-[#131318] shadow-xl rounded absolute w-[500px] h-[130px] left-1/2 bottom-40 lg:flex justify-center items-center gap-7 hidden">   
+                </div>
+              </div>
+        </div> -->
+        <div class="carousel w-full mt-12">
+            <div id="slide1" class="carousel-item lg:relative w-full">
+              <img src="Images/1.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide4" class="btn btn-circle bg-black  text-white border-none">❮</a> 
+                <a href="#slide2" class="btn btn-circle  bg-black  text-white border-none">❯</a>
+              </div>
+            </div> 
+            <div id="slide2" class="carousel-item relative w-full">
+              <img src="Images/troffe.jpg" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide1" class="btn btn-circle  bg-black text-white border-none">❮</a> 
+                <a href="#slide3" class="btn btn-circle  bg-black  text-white border-none">❯</a>
+              </div>
+            </div>
+        </div>
+        <div class="bg-[#131318] shadow-xl rounded-xl lg:absolute w-auto lg:w-[600px] h-[200px] left-[1100px] bottom-14 text-white p-8 space-y-4"> 
+            <h2 class="text-2xl font-extrabold">Meet all the heroes from the field</h2>
+            <p>Hockey is an ancient game played for years in India.<br>It is played with a hockey stick and a ball. </p>  
+        </div> 
+    </header>
+</body>
+</html>
